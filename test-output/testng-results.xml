@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-08T17:08:51 IST" name="Suite" finished-at="2020-11-08T17:11:00 IST" duration-ms="128959">
+    <groups>
+      <group name="smoke">
+        <method signature="Amazon1.amazonLogin(java.lang.String, java.lang.String)[pri:0, instance:class1.Amazon1@b968a76]" name="amazonLogin" class="class1.Amazon1"/>
+        <method signature="AmazonSearch.searchForProduct()[pri:0, instance:class1.AmazonSearch@2611b9a3]" name="searchForProduct" class="class1.AmazonSearch"/>
+        <method signature="WebTable.cricbuzzfun2()[pri:0, instance:class1.WebTable@2f9a01c1]" name="cricbuzzfun2" class="class1.WebTable"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2020-11-08T17:08:51 IST" name="Test" finished-at="2020-11-08T17:11:00 IST" duration-ms="128959">
+      <class name="class1.Amazon1">
+        <test-method is-config="true" signature="initializeBDriver()[pri:0, instance:class1.Amazon1@b968a76]" started-at="2020-11-08T17:08:51 IST" name="initializeBDriver" finished-at="2020-11-08T17:09:01 IST" duration-ms="9977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBDriver -->
+        <test-method signature="amazonLogin(java.lang.String, java.lang.String)[pri:0, instance:class1.Amazon1@b968a76]" started-at="2020-11-08T17:09:01 IST" name="amazonLogin" data-provider="getData" finished-at="2020-11-08T17:09:17 IST" duration-ms="15517" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[malge@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='nav-link-accountList']"}
+  (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BGJ2SVDD', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ganes\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49550}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fba1c5afbccf984fe92620da4d4cc7df
+*** Element info: {Using=xpath, value=//a[@id='nav-link-accountList']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='nav-link-accountList']"}
+  (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BGJ2SVDD', ip: '192.168.43.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ganes\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49550}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fba1c5afbccf984fe92620da4d4cc7df
+*** Element info: {Using=xpath, value=//a[@id='nav-link-accountList']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at class1.Amazon1.amazonLogin(Amazon1.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonLogin -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:class1.Amazon1@b968a76]" started-at="2020-11-08T17:09:17 IST" name="quitDriver" finished-at="2020-11-08T17:09:18 IST" duration-ms="747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initializeBDriver()[pri:0, instance:class1.Amazon1@b968a76]" started-at="2020-11-08T17:09:18 IST" name="initializeBDriver" finished-at="2020-11-08T17:09:26 IST" duration-ms="8251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBDriver -->
+        <test-method signature="amazonLogin(java.lang.String, java.lang.String)[pri:0, instance:class1.Amazon1@b968a76]" started-at="2020-11-08T17:09:26 IST" name="amazonLogin" data-provider="getData" finished-at="2020-11-08T17:09:34 IST" duration-ms="7883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bhagyashreemalge@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Access@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonLogin -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:class1.Amazon1@b968a76]" started-at="2020-11-08T17:09:34 IST" name="quitDriver" finished-at="2020-11-08T17:09:35 IST" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initializeBDriver()[pri:0, instance:class1.Amazon1@b968a76]" started-at="2020-11-08T17:09:35 IST" name="initializeBDriver" finished-at="2020-11-08T17:09:44 IST" duration-ms="9102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBDriver -->
+        <test-method signature="amazonMenuLinks()[pri:0, instance:class1.Amazon1@b968a76]" started-at="2020-11-08T17:09:44 IST" name="amazonMenuLinks" finished-at="2020-11-08T17:10:19 IST" duration-ms="35199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonMenuLinks -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:class1.Amazon1@b968a76]" started-at="2020-11-08T17:10:19 IST" name="quitDriver" finished-at="2020-11-08T17:10:20 IST" duration-ms="981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initializeBDriver()[pri:0, instance:class1.Amazon1@b968a76]" started-at="2020-11-08T17:10:20 IST" name="initializeBDriver" finished-at="2020-11-08T17:10:30 IST" duration-ms="9662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBDriver -->
+        <test-method signature="selectAndSearchItem()[pri:0, instance:class1.Amazon1@b968a76]" started-at="2020-11-08T17:10:30 IST" name="selectAndSearchItem" finished-at="2020-11-08T17:10:30 IST" duration-ms="660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectAndSearchItem -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:class1.Amazon1@b968a76]" started-at="2020-11-08T17:10:30 IST" name="quitDriver" finished-at="2020-11-08T17:10:31 IST" duration-ms="729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- class1.Amazon1 -->
+      <class name="class1.WebTable">
+        <test-method signature="cricbuzzfun2()[pri:0, instance:class1.WebTable@2f9a01c1]" started-at="2020-11-08T17:10:31 IST" name="cricbuzzfun2" finished-at="2020-11-08T17:10:44 IST" duration-ms="12959" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 0 out of bounds for length 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+at java.base/java.util.Objects.checkIndex(Objects.java:373)
+at java.base/java.util.ArrayList.get(ArrayList.java:426)
+at class1.WebTable.cricbuzzfun2(WebTable.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cricbuzzfun2 -->
+      </class> <!-- class1.WebTable -->
+      <class name="class1.AmazonSearch">
+        <test-method is-config="true" signature="initializeDriverWithURL(java.lang.String)[pri:0, instance:class1.AmazonSearch@2611b9a3]" started-at="2020-11-08T17:10:44 IST" name="initializeDriverWithURL" finished-at="2020-11-08T17:10:54 IST" duration-ms="10160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.amazon.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriverWithURL -->
+        <test-method signature="searchForProduct()[pri:0, instance:class1.AmazonSearch@2611b9a3]" started-at="2020-11-08T17:10:54 IST" name="searchForProduct" finished-at="2020-11-08T17:10:59 IST" duration-ms="5042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForProduct -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:class1.AmazonSearch@2611b9a3]" started-at="2020-11-08T17:10:59 IST" name="quitDriver" finished-at="2020-11-08T17:11:00 IST" duration-ms="787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- class1.AmazonSearch -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

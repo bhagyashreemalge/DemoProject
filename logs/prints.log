@@ -1,0 +1,4 @@
+18:16:04.617 [main] DEBUG class1.Amazon1 - clicked on search icon
+18:16:06.363 [main] INFO  class1.Amazon1 - driver got closed
+18:16:40.414 [main] INFO  class1.Amazon1 - driver got initialized
+18:16:51.406 [main] INFO  class1.Amazon1 - driver got closed

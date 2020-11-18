@@ -1,0 +1,8 @@
+17:50:27.039 [main] INFO  class1.Amazon1 - driver got closed
+17:50:36.562 [main] INFO  class1.Amazon1 - driver got initialized
+17:50:37.128 [main] DEBUG class1.Amazon1 - clicked on search icon
+17:50:37.930 [main] INFO  class1.Amazon1 - driver got closed
+20:46:31.746 [main] INFO  class1.Amazon1 - driver got initialized
+20:46:35.390 [main] INFO  class1.Amazon1 - successfully logged in
+20:46:46.180 [main] INFO  class1.Amazon1 - driver got closed
+20:47:02.333 [main] INFO  class1.Amazon1 - driver got initialized

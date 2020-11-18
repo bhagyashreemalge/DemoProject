@@ -1,0 +1,8 @@
+17:09:05.806 [main] INFO  class1.Amazon1 - successfully logged in
+17:09:18.285 [main] INFO  class1.Amazon1 - driver got closed
+17:09:26.537 [main] INFO  class1.Amazon1 - driver got initialized
+17:09:29.754 [main] INFO  class1.Amazon1 - successfully logged in
+17:09:35.185 [main] INFO  class1.Amazon1 - driver got closed
+17:09:44.294 [main] INFO  class1.Amazon1 - driver got initialized
+17:10:20.477 [main] INFO  class1.Amazon1 - driver got closed
+17:10:30.139 [main] INFO  class1.Amazon1 - driver got initialized

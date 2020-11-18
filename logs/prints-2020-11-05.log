@@ -1,0 +1,8 @@
+17:19:16.949 [main] INFO  Utilities.getLog - driver got initialized
+17:20:14.283 [main] INFO  Utilities.getLog - driver got closed
+17:20:26.166 [main] INFO  Utilities.getLog - driver got initialized
+17:20:26.902 [main] INFO  Utilities.getLog - driver got closed
+18:25:02.050 [main] INFO  Utilities.getLog - driver got initialized
+18:25:05.914 [main] INFO  Utilities.getLog - successfully logged in
+18:25:06.692 [main] INFO  Utilities.getLog - driver got closed
+18:25:14.681 [main] INFO  Utilities.getLog - driver got initialized
